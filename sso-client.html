@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <div class="sidenav">
+        <div class="logo">
+            <span class="logo">SSO</span>
+        </div>
+        <div class="menu ">
+            <a href="sso-user.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+        </div>
+        <div class="menu active">
+            <a href="sso-client.html"><i class="fa fa-desktop" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <header class="header">
+        <div class="float-left">
+            <div class="status">Single Sign On System</div>
+        </div>
+        <div class="float-right">
+            <div class="user-email">
+                <div class="float-left">
+                    <i class="fa fa-user" aria-hidden="true"></i> boonthavee_j@kingpower.com
+                </div>
+                <div class="float-left">
+                    <div class="dropdown">
+                        <button class="logout-btn" type="button" id="logout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                         </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="logout">
+                            <button class="dropdown-item" type="button">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="clearfix"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="edit-admin-view">
+
+                <div class="col-12 minus-left">
+                    <h1>SSO Client</h1></div>
+
+                <div class="col-12 minus-left">
+                    <div class="bread-crumb">
+                        <a href="">SSO Client</a>
+                    </div>
+                </div>
+                <div class="create-client">
+                    <button class="btn-create-client float-right">Create Client</button>
+                </div>
+
+<div class="clearfix"></div>
+                <div class="row">
+                    <div class="col-5 ">
+                        <div class="filter-data">
+                            <div class="filter-search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Name">
+                                    <div class="input-group-btn dropdown-custom">
+                                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <span class="sr-only">Toggle Dropdown</span>
+               </button>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="input-group input-search">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="filter-page float-right">
+                            <div class="filter-records">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-record">10 Records</button>
+                                    <button type="button" class="btn btn-record-select dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">20 Records</a>
+                                        <a class="dropdown-item" href="#">50 Records</a>
+                                    </div>
+                                </div>
+                                <div class="per-page"><span>Per Page</span></div>
+                            </div>
+                            <div class="filter-pagination">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-detail">
+                  <div class="tab-content">
+                      <table class="table table-striped">
+                          <thead>
+                              <tr class=title-table>
+                                  <th class="member-id">ID</th>
+                                  <th class="name">Name</th>
+                                  <th class="redirect-url">Rediect url</th>
+                                  <th class="created-at">Created at</th>
+                                  <th class="updated-at">Updated at</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>1</td>
+                                  <td>e-Commerce</td>
+                                  <td>https://e-commerce.com/callback</td>
+                                  <td>10/20/56</td>
+                                  <td>10/20/56</td>
+                              </tr>
+                              <tr>
+                                  <td>2</td>
+                                  <td>Self-service</td>
+                                  <td>https://self-service.com/callback</td>
+                                  <td>10/20/56</td>
+                                  <td>10/20/56</td>
+                              </tr>
+                              <tr>
+                                  <td>1</td>
+                                  <td>e-Commerce</td>
+                                  <td>https://e-commerce.com/callback</td>
+                                  <td>10/20/56</td>
+                                  <td>10/20/56</td>
+                              </tr>
+                              <tr>
+                                  <td>2</td>
+                                  <td>Self-service</td>
+                                  <td>https://self-service.com/callback</td>
+                                  <td>10/20/56</td>
+                                  <td>10/20/56</td>
+                              </tr>
+                              <tr>
+                                  <td>1</td>
+                                  <td>e-Commerce</td>
+                                  <td>https://e-commerce.com/callback</td>
+                                  <td>10/20/56</td>
+                                  <td>10/20/56</td>
+                              </tr>
+                              <tr>
+                                  <td>2</td>
+                                  <td>Self-service</td>
+                                  <td>https://self-service.com/callback</td>
+                                  <td>10/20/56</td>
+                                  <td>10/20/56</td>
+                              </tr>
+
+                           </tbody>
+                      </table>
+
+                  </div>
+                    <div class="row">
+                        <div class="col-6 data-detail">Result 10 of 14 users</div>
+                        <div class="col-6">
+                            <div class="filter-page float-right">
+                                <div class="filter-records">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-record">10 Records</button>
+                                        <button type="button" class="btn btn-record-select dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">20 Records</a>
+                                            <a class="dropdown-item" href="#">50 Records</a>
+                                        </div>
+                                    </div>
+                                    <div class="per-page"><span>Per Page</span></div>
+                                </div>
+                                <div class="filter-pagination">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer"><img src="img/full-logo-kingpower.png" class="footer-image"></footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>
