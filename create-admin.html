@@ -15,9 +15,15 @@
         <div class="logo">
             <span class="logo">SSO</span>
         </div>
-        <div class="none-show-menu">
-
-        </div>
+        <a href="sso-user.html" class="menu ">
+            <i class="fa fa-user" aria-hidden="true"></i>
+        </a>
+        <a class="menu " href="sso-client.html">
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+        </a>
+        <a class="menu active" href="administrators.html">
+            <i class="fa fa-shield" aria-hidden="true"></i>
+        </a>
     </div>
     <header class="header">
         <div class="float-left">
@@ -74,9 +80,18 @@
                                     <div>Type <span class="mark-alert">*</span></div>
                                 </div>
                                 <div class="col-4 my-auto">
-                                    <select class="form-control">
-<option>Choose Type</option>
-</select>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Please select">
+                                        <div class="input-group-btn ">
+                                            <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             <span class="sr-only">Toggle Dropdown</span>
+                                           </button>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Taiwan</a>
+                                                <a class="dropdown-item" href="#">Thailand</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
