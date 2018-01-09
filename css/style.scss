@@ -33,7 +33,7 @@ li {
     list-style: none;
 }
 
-.btn-color{
+.btn-color {
     background-color: #fff;
     border: 1px solid #ced4da !important;
 }
@@ -49,6 +49,14 @@ li {
 
 .higglight-text {
     color: #00adbb;
+}
+
+.back-page {
+    color: #00adbb;
+    width: 300px;
+    display: inline;
+    padding-top: 9px;
+
 }
 
 .minus-left {
@@ -142,16 +150,17 @@ li {
             }
         }
     }
-    i{
+
+    i {
         color: #8f8f8f;
     }
 
     .active {
         background-color: #00adbb;
-        i{
+
+        i {
             color: #ffffff;
         }
-
 
         &:hover,
         :focus {
@@ -310,15 +319,20 @@ li {
         width: 100%;
     }
 }
-.dropdown-toggle{
+
+.dropdown-toggle {
     color: #000000;
 }
+
 .table-detail {
+overflow-x: scroll;
+            min-width: 100%;
+
     .tab-content {
-        overflow-x: scroll;
         margin-bottom: 40px;
 
         table {
+            overflow-x: scroll;
             table-layout: fixed;
 
             thead {
@@ -327,28 +341,47 @@ li {
                     font-size: 16px;
 
                     th {
-                        padding: 25px 8px;
+                        min-width: 200px;
+                        padding: 25px 12px;
+                    }
+                    td{
+                        min-width: 200px;
                     }
                 }
 
+                .checkbox {
+                    width: 50px;
+                }
                 .id {
                     width: 90px;
                 }
 
                 .name {
-                    width: 250px;
+                    width: 350px;
                 }
 
                 .member-id {
-                    width: 200px;
+                    width: 150px;
                 }
-
-                .member-email {
+                .member-name {
                     width: 300px;
                 }
 
-                .member-tel{
-                    width: 150px;
+                .member-email {
+                    width: 350px;
+                }
+
+                .member-tel {
+                    width: 350px;
+                }
+                .phone {
+                    width: 200px;
+                }
+                .citizen-id {
+                    width: 250px;
+                }
+                .passport-id {
+                    width: 250px;
                 }
 
                 .redirect-url {
@@ -361,6 +394,9 @@ li {
 
                 .updated-at {
                     width: 150px;
+                }
+                .status {
+                    width: 160px;
                 }
             }
 
@@ -382,10 +418,12 @@ li {
         border-bottom-left-radius: 0;
         border-right: 0;
     }
-    button{
+
+    button {
         width: 40px;
     }
-    .icon-search{
+
+    .icon-search {
         border-radius: 5px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
