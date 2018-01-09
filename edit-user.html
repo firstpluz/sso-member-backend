@@ -15,12 +15,15 @@
         <div class="logo">
             <span class="logo">SSO</span>
         </div>
-        <div class="menu active">
-            <a href="sso-user.html"><i class="fa fa-user" aria-hidden="true"></i></a>
-        </div>
-        <div class="menu">
-            <a href="sso-client.html"><i class="fa fa-desktop" aria-hidden="true"></i></a>
-        </div>
+        <a href="sso-user.html" class="menu active">
+            <i class="fa fa-user" aria-hidden="true"></i>
+        </a>
+        <a class="menu" href="sso-client.html">
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+        </a>
+        <a class="menu" href="administrators.html">
+            <i class="fa fa-shield" aria-hidden="true"></i>
+        </a>
     </div>
     <header class="header">
         <div class="float-left">
@@ -71,12 +74,38 @@
                     <thead>
                         <tr>
                             <th scope="col"></th>
-                            <th scope="col">Membership</th>
                             <th scope="col">SSO Part</th>
-
+                            <th scope="col">Membership Part</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td class="header-topic topic">ID</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="height:100%;">
+                            <td valign="middle">
+                                MEMBER ID <span class="mark-alert">*</span>
+                            </td>
+                            <td valign="middle"><input type="text" class="form-control input-custom" id="exampleFormControlInput1" placeholder="Ex:123456"></td>
+                            <td valign="middle">
+                                <form class="form-inline">
+                                    <input type="text" class="form-control mr-sm-2 input-custom-2" id="inlineFormInputName2" placeholder="Ex:123456">
+                                    <div class="input-group mb-2 mr-sm-2">
+                                        <span>OR</span>
+                                    </div>
+                                    <input type="text" class="form-control mr-sm-2 input-custom-2" id="inlineFormInputName2" placeholder="Ex:123456">
+                                    <button type="submit" class="btn btn-search mb-2">Search from Database</button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr style="height:100%;">
+                            <td valign="middle">SSO ID</td>
+                            <td>12231213</td>
+                            <td></td>
+
+                        </tr>
                         <tr>
                             <td class="header-topic topic">
                                 Account & Contact</td>
@@ -98,8 +127,14 @@
                         </tr>
                         <tr style="height:100%;">
                             <td valign="middle">Password</td>
-                            <td valign="middle"><input type="text" class="form-control input-custom-password float-left" id="exampleFormControlInput1" placeholder="*********">
-                                <a href="#" class="float-left reset-password">Send Email for Reset Password</a></td>
+                            <td valign="middle">
+                                <form class="form-inline">
+                                    <div class="input-group mb-2 mr-sm-2">
+                                        <span>*******</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-reset-password mb-2">Send Email for Reset Password</button>
+                                </form>
+                            </td>
                             <td valign="middle"></td>
                         </tr>
                         <tr>
@@ -129,12 +164,13 @@
                             <td>VEGA</td>
                         </tr>
                         <tr>
+
                             <td>Title <span class="mark-alert">*</span></td>
                             <td>
                                 <div class="input-group input-custom">
                                     <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Mr.">
                                     <div class="input-group-btn ">
-                                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                      <span class="sr-only">Toggle Dropdown</span>
                                    </button>
                                         <div class="dropdown-menu dropdown-menu-right">
@@ -195,7 +231,7 @@
                                 <div class="input-group input-custom">
                                     <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Thai">
                                     <div class="input-group-btn ">
-                                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                      <span class="sr-only">Toggle Dropdown</span>
                                    </button>
                                         <div class="dropdown-menu dropdown-menu-right">
@@ -256,7 +292,7 @@
                                 <div class="input-group input-custom">
                                     <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Thailand">
                                     <div class="input-group-btn ">
-                                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                          <span class="sr-only">Toggle Dropdown</span>
                                        </button>
                                         <div class="dropdown-menu dropdown-menu-right">
@@ -270,7 +306,7 @@
                                 <div class="input-group input-custom">
                                     <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Thailand">
                                     <div class="input-group-btn ">
-                                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                          <span class="sr-only">Toggle Dropdown</span>
                                        </button>
                                         <div class="dropdown-menu dropdown-menu-right">
@@ -288,7 +324,7 @@
                                 <div class="input-group input-custom">
                                     <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Please select">
                                     <div class="input-group-btn ">
-                                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                          <span class="sr-only">Toggle Dropdown</span>
                                        </button>
                                         <div class="dropdown-menu dropdown-menu-right">
@@ -307,7 +343,7 @@
                                 <div class="input-group input-custom">
                                     <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Please select">
                                     <div class="input-group-btn ">
-                                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                          <span class="sr-only">Toggle Dropdown</span>
                                        </button>
                                         <div class="dropdown-menu dropdown-menu-right">
@@ -325,7 +361,7 @@
                                 <div class="input-group input-custom">
                                     <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Please select">
                                     <div class="input-group-btn ">
-                                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                          <span class="sr-only">Toggle Dropdown</span>
                                        </button>
                                         <div class="dropdown-menu dropdown-menu-right">
@@ -350,12 +386,38 @@
                         <tr>
                             <td>Monthly Income</td>
                             <td></td>
-                            <td>More than 100,000 THB(3,200 USD)</td>
+                            <td>
+                                <div class="input-group input-custom">
+                                    <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="More than 100,000 THB(3,200 USD)">
+                                    <div class="input-group-btn ">
+                                        <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                         <span class="sr-only">Toggle Dropdown</span>
+                                       </button>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" href="#">More than 200,000 THB(4,200 USD)</a>
+                                            <a class="dropdown-item" href="#">More than 300,000 THB(5,200 USD)</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Business Type</td>
                             <td></td>
-                            <td>Self - employed business</td>
+                            <td>
+                                <div class="input-group input-custom">
+                                    <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Self - employed business">
+                                    <div class="input-group-btn ">
+                                        <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                         <span class="sr-only">Toggle Dropdown</span>
+                                       </button>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" href="#">Self - employed business</a>
+                                            <a class="dropdown-item" href="#">Self - employed business</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Subscribe</td>

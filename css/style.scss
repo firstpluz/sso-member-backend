@@ -17,10 +17,11 @@ html {
     width: 100%;
     font-family: 'king_power_textregular' !important;
 }
+
 h1,
 h2,
 h3 {
-    font-family: 'king_power_textbold' !important;
+    font-family: 'king_power_textregular' !important;
 }
 
 hr {
@@ -32,8 +33,14 @@ li {
     list-style: none;
 }
 
+.btn-color{
+    background-color: #fff;
+    border: 1px solid #ced4da !important;
+}
+
 .custom-control-indicator {
     background-color: #fff !important;
+    border: 1px solid #cccccc !important;
 }
 
 .custom-control-input:checked~.custom-control-indicator {
@@ -135,15 +142,16 @@ li {
             }
         }
     }
+    i{
+        color: #8f8f8f;
+    }
 
     .active {
         background-color: #00adbb;
-
-        a {
-            .fa {
-                color: #ffffff;
-            }
+        i{
+            color: #ffffff;
         }
+
 
         &:hover,
         :focus {
@@ -302,7 +310,9 @@ li {
         width: 100%;
     }
 }
-
+.dropdown-toggle{
+    color: #000000;
+}
 .table-detail {
     .tab-content {
         overflow-x: scroll;
@@ -321,16 +331,24 @@ li {
                     }
                 }
 
-                .member-id {
+                .id {
                     width: 90px;
                 }
 
                 .name {
+                    width: 250px;
+                }
+
+                .member-id {
+                    width: 200px;
+                }
+
+                .member-email {
                     width: 300px;
                 }
 
-                .member-member-id {
-                    width: 250px;
+                .member-tel{
+                    width: 150px;
                 }
 
                 .redirect-url {
@@ -338,11 +356,11 @@ li {
                 }
 
                 .created-at {
-                    width: 250px;
+                    width: 150px;
                 }
 
                 .updated-at {
-                    width: 250px;
+                    width: 150px;
                 }
             }
 
@@ -362,6 +380,17 @@ li {
     input {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+        border-right: 0;
+    }
+    button{
+        width: 40px;
+    }
+    .icon-search{
+        border-radius: 5px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border: 1px solid #ced4da;
+        background-color: #ffffff;
     }
 }
 
@@ -480,6 +509,35 @@ li {
     cursor: pointer;
 }
 
+.btn-reset-password {
+    background-color: #00adbb;
+    max-width: 265px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-color {
+    background-color: #e6e6e6;
+}
+
+.btn-search {
+    background-color: #00adbb;
+    max-width: 205px;
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    color: #ffffff;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .btn-outline-cancel {
     border-radius: 5px;
     border: 1px solid #00adbb;
@@ -489,7 +547,21 @@ li {
     max-width: 153px;
     width: 100%;
     height: 46px;
-    margin: 30px 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn-confirm {
+    border-radius: 5px;
+    border: 1px solid #00adbb;
+    background-color: #00adbb;
+    background-image: none;
+    color: #00adbb;
+    color: #ffffff;
+    max-width: 153px;
+    width: 100%;
+    height: 46px;
+    margin: 10px;
     cursor: pointer;
 }
 
@@ -525,7 +597,7 @@ li {
 }
 
 .table thead th {
-    border-bottom: 3px solid #000 !important;
+    border-bottom: 3px solid #03666e !important;
 }
 
 td > * {
@@ -588,11 +660,11 @@ td input {
 }
 
 .sub-header {
-    border-top: 3px solid #000000 !important;
+    border-top: 3px solid #03666e !important;
 }
 
 .header-topic {
-    background-color: #0e363a !important;
+    background-color: #03666e !important;
     color: #fff;
 }
 
@@ -615,10 +687,18 @@ td input {
 }
 
 .input-custom {
-    width: 330px !important;
+    width: 340px !important;
+}
+
+.input-custom-2 {
+    height: 46px !important;
 }
 
 .input-custom-password {
+    width: 150px !important;
+}
+
+.input-custom-mem-id-mem-part {
     width: 150px !important;
 }
 
