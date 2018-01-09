@@ -15,12 +15,15 @@
         <div class="logo">
             <span class="logo">SSO</span>
         </div>
-        <div class="menu ">
-            <a href="sso-user.html"><i class="fa fa-user" aria-hidden="true"></i></a>
-        </div>
-        <div class="menu active">
-            <a href="sso-client.html"><i class="fa fa-desktop" aria-hidden="true"></i></a>
-        </div>
+        <a href="sso-user.html" class="menu ">
+            <i class="fa fa-user" aria-hidden="true"></i>
+        </a>
+        <a class="menu active" href="sso-client.html">
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+        </a>
+        <a class="menu" href="administrators.html">
+            <i class="fa fa-shield" aria-hidden="true"></i>
+        </a>
     </div>
     <header class="header">
         <div class="float-left">
@@ -58,7 +61,7 @@
                     </div>
                 </div>
                 <div class="create-client">
-                    <button class="btn-create-client float-right">Create Client</button>
+                    <a href="create-client.html"><button class="btn-create-client float-right">Create Client</button></a>
                 </div>
 
 <div class="clearfix"></div>
@@ -83,6 +86,7 @@
                                 </div>
                                 <div class="input-group input-search">
                                     <input type="text" class="form-control" placeholder="Search">
+                                    <button class="icon-search"><i class="fa fa-search"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +99,7 @@
                                     <button type="button" class="btn btn-record-select dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="sr-only">Toggle Dropdown</span>
   </button>
-                                    <div class="dropdown-menu">
+                                    <div class="dropdown-menu dropdown-menu-right">
                                         <a class="dropdown-item" href="#">20 Records</a>
                                         <a class="dropdown-item" href="#">50 Records</a>
                                     </div>
@@ -134,11 +138,11 @@
                       <table class="table table-striped">
                           <thead>
                               <tr class=title-table>
-                                  <th class="member-id">ID</th>
-                                  <th class="name">Name</th>
-                                  <th class="redirect-url">Rediect url</th>
-                                  <th class="created-at">Created at</th>
-                                  <th class="updated-at">Updated at</th>
+                                  <th class="member-id">ID <a href="#" data-toggle="dropdown" class="dropdown-toggle"></a></th>
+                                  <th class="name">Name <a href="#" data-toggle="dropdown" class="dropdown-toggle"></a></th>
+                                  <th class="redirect-url">Rediect url <a href="#" data-toggle="dropdown" class="dropdown-toggle"></a></th>
+                                  <th class="created-at">Created at <a href="#" data-toggle="dropdown" class="dropdown-toggle"></a></th>
+                                  <th class="updated-at">Updated at <a href="#" data-toggle="dropdown" class="dropdown-toggle"></a></th>
                               </tr>
                           </thead>
                           <tbody>
@@ -199,7 +203,7 @@
                                         <button type="button" class="btn btn-record-select dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="sr-only">Toggle Dropdown</span>
                         </button>
-                                        <div class="dropdown-menu">
+                                        <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" href="#">20 Records</a>
                                             <a class="dropdown-item" href="#">50 Records</a>
                                         </div>
