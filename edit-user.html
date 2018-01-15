@@ -64,8 +64,28 @@
                         <a href="sso-user.html" class="float-left back-page">    <i class="fa fa-chevron-left back-page" aria-hidden="true"></i> back</a>
                     </div>
                     <div class="col-6 ">
-                        <a href="#" class="float-right del-user">     <i class="fa fa-times-circle del-user" aria-hidden="true"></i> Delete this User on SSO</a>
+                        <button type="button" class="float-right del-user " data-toggle="modal" data-target="#del-user-sso"><i class="fa fa-times-circle del-user" aria-hidden="true"></i> Delete this User on SSO</button>
                     </div>
+                    <!-- Modal Save to Membership Database-->
+                    <div class="modal fade" id="del-user-sso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Do you want to delete this user?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                    <button type="button"  onclick="location.href='sso-user.html';" class="btn btn-info">Yes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
 
@@ -91,12 +111,20 @@
                             <td valign="middle"><input type="text" class="form-control input-custom" id="exampleFormControlInput1" placeholder="Ex:123456"></td>
                             <td valign="middle">
                                 <form class="form-inline">
-                                    <input type="text" class="form-control mr-sm-2 input-custom-2" id="inlineFormInputName2" placeholder="Ex:123456">
+                                    <div class="input-group input-change">
+                                        <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Ex:123456">
+                                        <div class="input-group-btn ">
+                                            <button type="button" class="btn btn-color-change"  aria-haspopup="true" aria-expanded="false"> Change
+
+                                           </button>
+                                        </div>
+                                    </div>
                                     <div class="input-group">
                                         <span>OR</span>
                                     </div>
-                                    <button type="submit" class="btn btn-search mb-2">Search from Database</button>
+                                    <button type="submit" class="btn btn-search mb-2" style="width: 46px;"><i class="fa fa-search" aria-hidden="true"></i></button>
                                 </form>
+                                <p class="not-found-alert">Member ID not found.</p>
                             </td>
                         </tr>
                         <tr style="height:100%;">
@@ -154,53 +182,118 @@
                         </tr>
                         <tr>
                             <td>Title <span class="mark-alert">*</span></td>
-                            <td></td>
+                            <td>
+                                <div class="input-group input-custom">
+                                    <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Please select">
+                                    <div class="input-group-btn ">
+                                        <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                         <span class="sr-only">Toggle Dropdown</span>
+                                       </button>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" href="#">Taiwan</a>
+                                            <a class="dropdown-item" href="#">Thailand</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                             <td>Mr.</td>
                         </tr>
                         <tr>
                             <td>First Name<span class="mark-alert">*</span></td>
-                            <td></td>
+                            <td valign="middle"><input type="text" class="form-control input-custom" id="exampleFormControlInput1" placeholder="First Name"></td>
                             <td>Tanet</td>
                         </tr>
                         <tr>
                             <td>Last Name<span class="mark-alert">*</span></td>
-                            <td></td>
+                            <td valign="middle"><input type="text" class="form-control input-custom" id="exampleFormControlInput1" placeholder="Last Name"></td>
                             <td>Arunthavornwong</td>
 
                         </tr>
                         <tr>
-                            <td>First Name (Local) <span class="mark-alert">*</span></td>
+                            <td>First Name (Local) <span class="mark-alert"></span></td>
                             <td></td>
                             <td>ธเนศ</td>
                         </tr>
                         <tr>
-                            <td>Last Name (Local) <span class="mark-alert">*</span></td>
+                            <td>Last Name (Local) <span class="mark-alert"></span></td>
                             <td></td>
                             <td>อรุณถาวรวงศ์</td>
                         </tr>
                         <tr>
                             <td>Birthday <span class="mark-alert">*</span></td>
-                            <td></td>
+                            <td>
+                                <form class="form-inline">
+                                    <div class="input-group input-custom-birthday">
+                                        <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Year">
+                                        <div class="input-group-btn ">
+                                            <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             <span class="sr-only">Toggle Dropdown</span>
+                                           </button>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Taiwan</a>
+                                                <a class="dropdown-item" href="#">Thailand</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-group input-custom-birthday">
+                                        <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Month">
+                                        <div class="input-group-btn ">
+                                            <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             <span class="sr-only">Toggle Dropdown</span>
+                                           </button>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Taiwan</a>
+                                                <a class="dropdown-item" href="#">Thailand</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-group input-custom-birthday">
+                                        <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Day">
+                                        <div class="input-group-btn ">
+                                            <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             <span class="sr-only">Toggle Dropdown</span>
+                                           </button>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Taiwan</a>
+                                                <a class="dropdown-item" href="#">Thailand</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
                             <td>MAY 03,1984</td>
 
                         </tr>
                         <tr>
-                            <td>Gender <span class="mark-alert">*</span></td>
+                            <td>Gender</td>
                             <td></td>
                             <td>Male</td>
                         </tr>
                         <tr>
-                            <td>Marital Status <span class="mark-alert">*</span></td>
+                            <td>Marital Status</td>
                             <td></td>
                             <td>Married</td>
                         </tr>
                         <tr>
                             <td>Nationality <span class="mark-alert">*</span></td>
-                            <td></td>
+                            <td>
+                                <div class="input-group input-custom">
+                                    <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="Please select">
+                                    <div class="input-group-btn ">
+                                        <button type="button" class="btn btn-color dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                         <span class="sr-only">Toggle Dropdown</span>
+                                       </button>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" href="#">Taiwan</a>
+                                            <a class="dropdown-item" href="#">Thailand</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                             <td>Thai</td>
                         </tr>
                         <tr>
-                            <td>Citizen ID <span class="mark-alert">*</span></td>
+                            <td>Citizen ID</td>
                             <td></td>
                             <td>1 1234 12345 12 1</td>
 
@@ -217,7 +310,7 @@
                             <td class="sub-header"></td>
                         </tr>
                         <tr>
-                            <td>Address number <span class="mark-alert">*</span></td>
+                            <td>Address number</td>
                             <td></td>
                             <td><input type="text" class="form-control input-custom" id="exampleFormControlInput1" placeholder=""></td>
                         </tr>
@@ -237,7 +330,7 @@
                             <td><input type="text" class="form-control input-custom" id="exampleFormControlInput1" placeholder=""></td>
                         </tr>
                         <tr>
-                            <td>Country <span class="mark-alert">*</span></td>
+                            <td>Country</td>
                             <td></td>
                             <td>
                                 <div class="input-group input-custom">
@@ -255,7 +348,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Province <span class="mark-alert">*</span></td>
+                            <td>Province </td>
                             <td></td>
                             <td>
                                 <div class="input-group input-custom">
@@ -274,7 +367,7 @@
 
                         </tr>
                         <tr>
-                            <td>District <span class="mark-alert">*</span></td>
+                            <td>District </td>
                             <td></td>
                             <td>
                                 <div class="input-group input-custom">
@@ -292,7 +385,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Sub district <span class="mark-alert">*</span></td>
+                            <td>Sub district</td>
                             <td></td>
                             <td>
                                 <div class="input-group input-custom">
@@ -310,7 +403,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Postal code <span class="mark-alert">*</span></td>
+                            <td>Postal code</td>
                             <td></td>
                             <td><input type="text" class="form-control input-custom" id="exampleFormControlInput1" placeholder="102310"></td>
                         </tr>
@@ -367,12 +460,7 @@
                             </td>
                             <td></td>
                         </tr>
-                        <tr>
-                            <td style="padding: 32px 15px;">Save to Database</td>
-                            <td><button type="button" class=" btn-save-to-db" data-toggle="modal" data-target="#toSSO">Save to SSO Database</button></td>
-                            <td><button type="button" class=" btn-save-to-db" data-toggle="modal" data-target="#toMembership">Save to Membership Database</button></td>
 
-                        </tr>
                     </tbody>
                 </table>
                 <!-- Modal Save to SSO Database-->
@@ -416,10 +504,14 @@
                 <div class="row end-row">
                     <div class="col-12">
                         <p class="text-center">
-                            Please make sure you already have saved before continue. Click <b>Return to SSO Users</b> for back to SSO Users page.
+                            Please make sure you already have saved before continue.
+                        </p>
+                        <p class="text-center">
+                            Click <b>Return to SSO Users</b> for back to SSO Users page.
                         </p>
                         <div class="text-center">
-                            <button type="button" class=" btn-save" data-toggle="modal" data-target="#returnToSSO">Return to SSO Users</button>
+                            <button type="button" class=" btn-save" data-toggle="modal" data-target="#returnToSSO">Back to SSO Users</button>
+                            <button type="button" class=" btn-save-to-db" data-toggle="modal" data-target="#toMembership">Save to SSO and Membership</button>
                         </div>
                     </div>
                 </div>

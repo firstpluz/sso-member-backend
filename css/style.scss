@@ -59,6 +59,12 @@ li {
 
 }
 
+.not-found-alert{
+    color: red;
+    font-size: 14px;
+    line-height: 10px;
+}
+
 .minus-left {
     margin-left: -15px;
 }
@@ -496,6 +502,7 @@ overflow-x: scroll;
     margin: 20px 0;
 
     .del-user {
+        border: 0;
         color: #ff2d55;
     }
 
@@ -561,6 +568,10 @@ overflow-x: scroll;
 
 .btn-color {
     background-color: #e6e6e6;
+}
+.btn-color-change {
+    color: #ffffff;
+    background-color: #00adbb;
 }
 
 .btn-search {
@@ -726,6 +737,16 @@ td input {
 
 .input-custom {
     width: 340px !important;
+}
+.input-change{
+    margin-right: 10px;
+}
+.input-custom-change {
+    width: 340px !important;
+}
+.input-custom-birthday {
+    margin-right: 10px;
+    width: 120px !important;
 }
 
 .input-custom-2 {
